@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        @media screen and (max-width:767px) {
+        .main {
+          height: 100vh;
+          width: 100vw;
+        }
+        .h1 {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-image: url(./assests/images/back1.jpg);
+        }
+        /* .h11 {
+          transform: translate(50px, 50px);
+        } */
+        b {
+          color: white;
+          font-weight: 500;
+          font-size: 20px;
+          font-family: sans-serif;
+        }
+        .span1 {
+          color: red;
+          font-size: 20px;
+        }
+        /* .h12 {
+          transform: translate(150px, 50px);
+        } */
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 10px;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: sans-serif;
+        }
+        a:hover {
+          background-color: bisque;
+          color: black;
+        }
+        /* .h13 {
+          transform: translate(100px,20px);
+        } */
+        .h131 {
+          color: white;
+          font-size: 20px;
+          font-family:sans-serif;
+          font-weight: 500;
+          transform: translate(-488px,15px);
+        }
+        .h132 {
+          height: 12px;
+        }
+        button {
+          transform: translate(-160px,-30px);
+          background-color: rgb(253, 19, 19);
+          color: white;
+          font-family:sans-serif;
+          height: 25px;
+          font-size: 20px;
+          width: 250px;
+        }
+        .h141 {
+          color: white;
+          font-size: 10px;
+          font-weight: 500;
+          font-family: sans-serif;
+          transform: translate(-410px,100px);
+        }
+        .h142 {
+          color: white;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          font-size: 10px;
+          transform: translate(-448px,90px);
+          font-weight: 700;
+        }
+        .h143 {
+          color: white;
+          border: 1px solid;
+          height: 10px;
+          width: 55px;
+          font-size: 10px;
+          text-align: center;
+          align-content: center;
+          transform: translate(-398px,100px);
+        }
+        .h2 {
+          height: auto;
+          width: auto;
+        }
+        .h21 {
+          height: 60%;
+          width: 90%;
+          transform: translate(10px,150px);
+        }
+        .h22 {
+          color: rgb(110, 101, 91);
+          font-size: 10px;
+          display: inline-block;
+          transform: translate(110px,-570px);
+        }
+        .h23 {
+          font-weight: 600;
+          font-size: 20px;
+          font-family: sans-serif;
+          transform: translate(10px,-590px);
+        }
+        .h24 {
+          font-family: sans-serif;
+          color: rgb(110, 101, 91);
+          transform: translate(10px,-600px);
+          font-size: 20px;
+        }
+        .h3 {
+          height: 100%;
+          width: 100%;
+          background-color: whitesmoke;
+        }
+        .h31 {
+          font-size: 20px;
+          display: inline-block;
+          font-family: sans-serif;
+          transform: translate(300px);
+          font-weight: 600;
+        }
+        .h32 {
+          font-family: sans-serif;
+          font-size: 10px;
+          display: inline-block;
+          transform: translate(160px,20px);
+          color: rgb(196, 174, 140); 
+        }
+        .h33 {
+          display: flex;
+          flex-direction: row;
+          height: 75%;
+          width: 95%;
+          justify-content: space-between;
+          transform: translate(20px);
+        }
+        .h331 {
+          height: 85%;
+          width: 30%;
+        }
+        .h332 {
+          height: 85%;
+          width: 30%;
+        }
+        .h333 {
+          height: 85%;
+          width: 30%;
+        }
+        .h334 {
+          height: 90%;
+          width: 100%;
+        }
+        .h335 {
+          height: 90%;
+          width: 100%;
+        }
+        .h336 {
+          height: 90%;
+          width: 100%;
+        }
+        .h337 {
+          font-size: 10px;
+          transform: translate(55px);
+        }
+        .h34 {
+          transform: translate(52px);
+          font-size: 10px;
+          color: rgb(146, 124, 124);
+        }
+        .h35 {
+          transform: translate(52px);
+          font-size: 10px;
+          color: rgb(146, 124, 124);
+        }
+        .h36 {
+          transform: translate(52px);
+          font-size: 10px;
+          color: rgb(146, 124, 124);
+        }
+        .h4 {
+          height: 100%;
+          width: 100%;
+        }
+        .h41 {
+          font-size: 20px;
+          display: inline-block;
+          font-family: sans-serif;
+          transform: translate(300px);
+          font-weight: 600;
+        }
+        .h42 {
+          font-family: sans-serif;
+          font-size: 10px;
+          display: inline-block;
+          color: rgb(196, 174, 140); 
+          transform: translate(200px,20px);
+        }
+        .h43 {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(2,1fr);
+        }
+        .i1{
+          height: 100%;
+          width: 100%;
+        }
+        .i2{
+          height: 99%;
+          width: 100%;
+        }
+        .h5 {
+          height: 80%;
+          width: 100%;
+          background-image: url(./assests/images/test.jpg );
+          background-size: cover;
+        }
+        .h51 {
+          font-family: sans-serif;
+          font-weight: 700;
+          transform: translate(300px,150px);
+          font-size: 20px;
+          color: white;
+        }
+        .h52{
+          color: white;
+          font-family: sans-serif;
+          font-size: 15px;
+          opacity: 0.8;
+          transform: translate(120px,170px);
+        }
+        .h53{
+          color: white;
+          font-family: sans-serif;
+          font-size: 10px;
+          opacity: 0.8;
+          transform: translate(200px,220px);
+        }
+        .h6{
+          height: 100%;
+          width: 100%;
+        }
+        .h61{
+          height: 60%;
+          width: 80%;
+          transform: translate(50px,20px);
+        }
+        .h62{
+          height: 100%;
+          width: 100%;
+          transform: translate(50px,20px);
+          font-size: 10px;
+        }
+        .h621{
+          height: 50px;
+          width: 30%;
+        }
+        .h622{
+          height: 50px;
+          width: 30%;
+        }
+        .h623{
+          height: 50px;
+          width: 30%;
+        }
+        .h624{
+          height: 90px;
+          width: 30%;
+        }
+        .h625{
+          height:40px;
+          width: 140px;
+          font-size: 10px;
+          background-color: red;
+        }
+        .h7{
+          height: 30%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .h71{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(100px);
+        }
+        .h711{
+          opacity: 0.6;
+        }
+        .h72{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(100px);
+        }
+        .h721{
+          opacity: 0.6;
+        }
+        .h73{
+          background-repeat: no-repeat;
+          width: 40%;
+          height: 80%;
+          opacity: 4.5;
+          background-size: cover;
+          transform: translate(-400px,150px);
+          border-radius: 10px;
+          background-image: url(./assests/images/backgr.jpg);
+        }
+        .h731{
+          opacity: 1.5;
+          color: white;
+          font-size: 6px;
+        }
+        .h74{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(-300px,150px);
+        }
+        .h741{
+          height: 20%;
+          width: 15%;
+        }
+        .h742{
+          opacity: 0.6;
+        }   
+        }
+        @media screen and (min-width:768px) {
+        .main {
+          height: 100vh;
+          width: 100vw;
+        }
+        .h1 {
+          height: 100vh;
+          width: 100vw;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-image: url(./assests/images/back1.jpg);
+        }
+        .h11 {
+          transform: translate(100px, 50px);
+        }
+        b {
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          font-family: sans-serif;
+        }
+        .span1 {
+          color: red;
+          font-size: 20px;
+        }
+        .h12 {
+          transform: translate(130px, 50px);
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 10px 10px;
+          font-size: 20px;
+          font-weight: 700;
+          font-family: sans-serif;
+        }
+        a:hover {
+          background-color: bisque;
+          color: black;
+        }
+        .h13 {
+          transform: translate(150px,119px);
+        }
+        .h131 {
+          color: white;
+          font-size: 20px;
+          font-family:sans-serif;
+          font-weight: 700;
+          transform: translate(10px,-90px);
+        }
+        .h132 {
+          height: 20px;
+        }
+        button {
+          transform: translate(300px,-150px);
+          background-color: rgb(253, 19, 19);
+          color: white;
+          font-family:sans-serif;
+          height: 50px;
+          font-size: 20px;
+          width: 170px;
+        }
+        .h141 {
+          color: white;
+          font-size: 20px;
+          font-weight: 500;
+          font-family: sans-serif;
+          transform: translate(-400px,200px);
+        }
+        .h142 {
+          color: white;
+          font-family: sans-serif;
+          font-size: 30px;
+          transform: translate(-520px,200px);
+          font-weight: 700;
+        }
+        .h143 {
+          color: white;
+          border: 1px solid;
+          height: 70px;
+          width: 150px;
+          font-size: 20px;
+          text-align: center;
+          align-content: center;
+          transform: translate(-398px,200px);
+        }
+        .h2 {
+          height: auto;
+          width: auto;
+        }
+        .h21 {
+          height: 50%;
+          width: 50%;
+          transform: translate(560px);
+        }
+        .h22 {
+          color: rgb(110, 101, 91);
+          font-size: 20px;
+          display: inline-block;
+          transform: translate(-580px,-400px);
+        }
+        .h23 {
+          font-weight: 600;
+          font-size: 20px;
+          font-family: sans-serif;
+          transform: translate(10px,-420px);
+        }
+        .h24 {
+          font-family: sans-serif;
+          color: rgb(110, 101, 91);
+          transform: translate(10px,-400px);
+          font-size: 20px;
+        }
+        .h3 {
+          height: 100%;
+          width: 100%;
+          background-color: whitesmoke;
+        }
+        .h31 {
+          font-size: 20px;
+          display: inline-block;
+          font-family: sans-serif;
+          transform: translate(500px);
+          font-weight: 600;
+        }
+        .h32 {
+          font-family: sans-serif;
+          font-size: 10px;
+          display: inline-block;
+          transform: translate(357px,10px);
+          color: rgb(196, 174, 140); 
+        }
+        .h33 {
+          display: flex;
+          flex-direction: row;
+          height: 75%;
+          width: 95%;
+          justify-content: space-between;
+          transform: translate(20px);
+        }
+        .h331 {
+          height: 85%;
+          width: 30%;
+        }
+        .h332 {
+          height: 85%;
+          width: 30%;
+        }
+        .h333 {
+          height: 85%;
+          width: 30%;
+        }
+        .h334 {
+          height: 90%;
+          width: 100%;
+        }
+        .h335 {
+          height: 90%;
+          width: 100%;
+        }
+        .h336 {
+          height: 90%;
+          width: 100%;
+        }
+        .h337 {
+          font-size: 20px;
+          transform: translate(105px);
+        }
+        .h34 {
+          transform: translate(100px);
+          font-size: 20px;
+          color: rgb(146, 124, 124);
+        }
+        .h35 {
+          transform: translate(100px);
+          font-size: 20px;
+          color: rgb(146, 124, 124);
+        }
+        .h36 {
+          transform: translate(100px);
+          font-size: 20px;
+          color: rgb(146, 124, 124);
+        }
+        .h4 {
+          height: 100%;
+          width: 100%;
+        }
+        .h41 {
+          font-size: 20px;
+          display: inline-block;
+          font-family: sans-serif;
+          transform: translate(600px);
+          font-weight: 600;
+        }
+        .h42 {
+          font-family: sans-serif;
+          font-size: 10px;
+          display: inline-block;
+          color: rgb(196, 174, 140); 
+          transform: translate(498px,20px);
+        }
+        .h43 {
+          height: 100%;
+          width: 100%;
+          display: grid;
+          grid-template-columns: repeat(3,1fr);
+          grid-template-rows: repeat(2,1fr);
+        }
+        .i1{
+          height: 100%;
+          width: 100%;
+        }
+        .i2{
+          height: 99%;
+          width: 100%;
+        }
+        .h5 {
+          height: 80%;
+          width: 100%;
+          background-image: url(./assests/images/test.jpg );
+          background-size: cover;
+        }
+        .h51 {
+          font-family: sans-serif;
+          font-weight: 700;
+          transform: translate(600px,150px);
+          font-size: 20px;
+          color: white;
+        }
+        .h52{
+          color: white;
+          font-family: sans-serif;
+          font-size: 15px;
+          opacity: 0.8;
+          transform: translate(420px,170px);
+        }
+        .h53{
+          color: white;
+          font-family: sans-serif;
+          font-size: 10px;
+          opacity: 0.8;
+          transform: translate(500px,200px);
+        }
+        .h6{
+          height: 100%;
+          width: 100%;
+        }
+        .h61{
+          height: 60%;
+          width: 40%;
+          transform: translate(50px,20px);
+        }
+        .h62{
+          height: 100%;
+          width: 100%;
+          transform: translate(650px,-350px);
+          font-size: 10px;
+        }
+        .h621{
+          height: 50px;
+          width: 20%;
+        }
+        .h622{
+          height: 50px;
+          width: 20%;
+        }
+        .h623{
+          height: 50px;
+          width: 20%;
+        }
+        .h624{
+          height: 90px;
+          width: 30%;
+        }
+        .h625{
+          height:40px;
+          width: 190px;
+          font-size: 10px;
+          background-color: red;
+        }
+        .h7{
+          height: 30%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+        }
+        .h71{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(100px);
+        }
+        .h711{
+          opacity: 0.6;
+        }
+        .h72{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(100px);
+        }
+        .h721{
+          opacity: 0.6;
+        }
+        .h73{
+          background-repeat: no-repeat;
+          width: 20%;
+          height: 80%;
+          opacity: 4.5;
+          background-size: cover;
+          transform: translate(150px);
+          border-radius: 10px;
+          background-image: url(./assests/images/backgr.jpg);
+        }
+        .h731{
+          opacity: 1.5;
+          color: white;
+          font-size: 6px;
+        }
+        .h74{
+          font-size: 15px;
+          font-family: sans-serif;
+          transform: translate(180px);
+        }
+        .h741{
+          height: 20%;
+          width: 15%;
+        }
+        .h742{
+          opacity: 0.6;
+        }
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="h1">
+        <div class="h11">
+          <b>Eatery</b>
+          <b class="span1">.</b>
+          <b>Cafe</b>
+        </div>
+        <div class="h12">
+          <a href="#Home">HOME</a>
+          <a href="#About">ABOUT</a>
+          <a href="#Chef">CHEF</a>
+          <a href="#Contact">CONTACT</a>
+        </div>
+        <div class="h13">
+          <p class="h131">
+            CALL NOW!<svg
+              class="h132"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
+                  fill="#fafafa"
+                ></path>
+              </g>
+            </svg>
+            010 020 0340
+          </p>
+          <button>Reserve a Table</button>
+        </div>
+        <div class="h14">
+          <p class="h141">NEW RESTAURANT IN TOWN</p>
+          <pre class="h142">
+              Enjoy our special menus every
+              Sunday and Friday
+            </pre
+          >
+          <p class="h143">Reservation</p>
+        </div>
+      </div>
+      <div class="h2">
+        <img class="h21" src="./assests/images/img2.jpg" />
+        <p class="h22">READ OUR STORY</p>
+        <pre class="h23">
+                  We've been making The
+                  Delicious Foods Since 1999
+              </pre
+        >
+        <pre class="h24">
+                  Fusce hendrent malesuada lacina Donec semper semper sem
+                  vitae malesuada, Proin scelensque risus et ipsum semper molestie
+                  sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo
+                  malesuada id.
+  
+                  Sed elementum vel felis sed scelerisque. In arcu diam,sollicitudin
+                  eu nibh ac, posuere tristique magna You can use this template for
+                  your cafe or restaurant website. Please tell your friends about
+                  <strong>templatemo.</strong> Thank you.
+              </pre
+        >
+      </div>
+      <div class="h3">
+        <p class="h31">Meet our chefs</p>
+        <p class="h32">THEY ARE NICE & FRIENDLY</p>
+        <div class="h33">
+          <div class="h331">
+            <img class="h334" src="./assests/images/chef1.jpg" />
+            <p class="h337">NEW CATHERINE</p>
+            <p class="h34">KITCHEN OFFICER</p>
+          </div>
+          <div class="h332">
+            <img class="h335" src="./assests/images/chef2.jpg" />
+            <p class="h337">ISABELLA GRACE</p>
+            <p class="h35">OWNER & MANAGER</p>
+          </div>
+          <div class="h333">
+            <img class="h336" src="./assests/images/chef3.jpg" />
+            <p class="h337">LIDNSAY PERLEN</p>
+            <p class="h36">PIZZA SPECIALIST</p>
+          </div>
+        </div>
+      </div>
+      <div class="h4">
+        <p class="h41">Our Menus</p>
+        <p class="h42">TEA TIME & DINING</p>
+        <div class="h43">
+          <img src="./assests/images/menu1.jpg" class="i1" />
+          <img src="./assests/images/menu2.jpg" class="i1" />
+          <img src="./assests/images/menu3.jpg" class="i1" />
+          <img src="./assests/images/menu4.jpg" class="i2" />
+          <img src="./assests/images/menu5.jpg" class="i2" />
+          <img src="./assests/images/menu6.jpg" class="i2" />
+        </div>
+      </div>
+      <div class="h5">
+        <p class="h51">Testimonals</p>
+        <pre class="h52">
+               Vivamus aliquet felis eu diam ultricis congue. Morbi porta lorem 
+                         consectetur porta quis du elit habitant morbi.
+          </pre
+        >
+        <pre class="h53">
+            <b>Jessie White</b> |Vitae lacina augue urna quis 
+          </pre>
+      </div>
+      <div class="h6">
+        <iframe
+          class="h61"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.3030413476204!2d100.5641230193719!3d13.757206847615207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf51ce6427b7918fc!2sG+Tower!5e0!3m2!1sen!2sth!4v1510722015945"
+          allowfullscreen=""
+        ></iframe>
+        <form class="h62">
+          <h2>Contact Us</h2>
+          <input class="h621" type="text" placeholder="Full Name" />
+          <input class="h623" type="email" placeholder="Email" /><br>
+          <input class="h622" type="text" placeholder="Subject" /><br>
+          <textarea>
+Enter Message
+            </textarea>
+          <input class="h625" type="Submit" value="Send a Message" />
+        </form>
+      </div>
+      <hr />
+      <div class="h7">
+        <div class="h71">
+          <h3>Find Us</h3>
+          <pre class="h711">
+  123 nulla a cursus rhoncus,
+  augue sem viverra 10870
+  id ultricies sapien
+            </pre
+          >
+        </div>
+        <div class="h72">
+          <h3>Reservation</h3>
+          <pre class="h721">
+  090-080-0650 | 090-070-0430
+  info@company.com
+  LINE: eatery247
+            </pre
+          >
+        </div>
+        <div class="h73">
+          <h3>Open Hours</h3>
+          <pre class="h731">
+  Monday: Closed
+  
+  <b>Tuesday to Friday</b>
+  7:00 AM - 9:00 PM
+  
+  <b>Saturday - Sunday</b>
+  11:00 AM - 10:00 PM 
+            </pre>
+        </div>
+        <div class="h74">
+          <svg
+            class="h741"
+            fill="#e81111"
+            viewBox="-5.5 0 32 32"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            stroke="#e81111"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>facebook</title>
+              <path
+                d="M1.188 5.594h18.438c0.625 0 1.188 0.563 1.188 1.188v18.438c0 0.625-0.563 1.188-1.188 1.188h-18.438c-0.625 0-1.188-0.563-1.188-1.188v-18.438c0-0.625 0.563-1.188 1.188-1.188zM14.781 17.281h2.875l0.125-2.75h-3v-2.031c0-0.781 0.156-1.219 1.156-1.219h1.75l0.063-2.563s-0.781-0.125-1.906-0.125c-2.75 0-3.969 1.719-3.969 3.563v2.375h-2.031v2.75h2.031v7.625h2.906v-7.625z"
+              ></path>
+            </g>
+          </svg>
+          <svg
+            class="h741"
+            fill="#fa0505"
+            height="200px"
+            width="200px"
+            version="1.1"
+            id="Layer_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 310 310"
+            xml:space="preserve"
+            stroke="#fa0505"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g id="XMLID_826_">
+                <path
+                  id="XMLID_827_"
+                  d="M302.973,57.388c-4.87,2.16-9.877,3.983-14.993,5.463c6.057-6.85,10.675-14.91,13.494-23.73 c0.632-1.977-0.023-4.141-1.648-5.434c-1.623-1.294-3.878-1.449-5.665-0.39c-10.865,6.444-22.587,11.075-34.878,13.783 c-12.381-12.098-29.197-18.983-46.581-18.983c-36.695,0-66.549,29.853-66.549,66.547c0,2.89,0.183,5.764,0.545,8.598 C101.163,99.244,58.83,76.863,29.76,41.204c-1.036-1.271-2.632-1.956-4.266-1.825c-1.635,0.128-3.104,1.05-3.93,2.467 c-5.896,10.117-9.013,21.688-9.013,33.461c0,16.035,5.725,31.249,15.838,43.137c-3.075-1.065-6.059-2.396-8.907-3.977 c-1.529-0.851-3.395-0.838-4.914,0.033c-1.52,0.871-2.473,2.473-2.513,4.224c-0.007,0.295-0.007,0.59-0.007,0.889 c0,23.935,12.882,45.484,32.577,57.229c-1.692-0.169-3.383-0.414-5.063-0.735c-1.732-0.331-3.513,0.276-4.681,1.597 c-1.17,1.32-1.557,3.16-1.018,4.84c7.29,22.76,26.059,39.501,48.749,44.605c-18.819,11.787-40.34,17.961-62.932,17.961 c-4.714,0-9.455-0.277-14.095-0.826c-2.305-0.274-4.509,1.087-5.294,3.279c-0.785,2.193,0.047,4.638,2.008,5.895 c29.023,18.609,62.582,28.445,97.047,28.445c67.754,0,110.139-31.95,133.764-58.753c29.46-33.421,46.356-77.658,46.356-121.367 c0-1.826-0.028-3.67-0.084-5.508c11.623-8.757,21.63-19.355,29.773-31.536c1.237-1.85,1.103-4.295-0.33-5.998 C307.394,57.037,305.009,56.486,302.973,57.388z"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          <svg
+            class="h741"
+            viewBox="0 0 20 20"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#f20707"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>instagram [#167]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-340.000000, -7439.000000)"
+                  fill="#f31212"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M289.869652,7279.12273 C288.241769,7279.19618 286.830805,7279.5942 285.691486,7280.72871 C284.548187,7281.86918 284.155147,7283.28558 284.081514,7284.89653 C284.035742,7285.90201 283.768077,7293.49818 284.544207,7295.49028 C285.067597,7296.83422 286.098457,7297.86749 287.454694,7298.39256 C288.087538,7298.63872 288.809936,7298.80547 289.869652,7298.85411 C298.730467,7299.25511 302.015089,7299.03674 303.400182,7295.49028 C303.645956,7294.859 303.815113,7294.1374 303.86188,7293.08031 C304.26686,7284.19677 303.796207,7282.27117 302.251908,7280.72871 C301.027016,7279.50685 299.5862,7278.67508 289.869652,7279.12273 M289.951245,7297.06748 C288.981083,7297.0238 288.454707,7296.86201 288.103459,7296.72603 C287.219865,7296.3826 286.556174,7295.72155 286.214876,7294.84312 C285.623823,7293.32944 285.819846,7286.14023 285.872583,7284.97693 C285.924325,7283.83745 286.155174,7282.79624 286.959165,7281.99226 C287.954203,7280.99968 289.239792,7280.51332 297.993144,7280.90837 C299.135448,7280.95998 300.179243,7281.19026 300.985224,7281.99226 C301.980262,7282.98483 302.473801,7284.28014 302.071806,7292.99991 C302.028024,7293.96767 301.865833,7294.49274 301.729513,7294.84312 C300.829003,7297.15085 298.757333,7297.47145 289.951245,7297.06748 M298.089663,7283.68956 C298.089663,7284.34665 298.623998,7284.88065 299.283709,7284.88065 C299.943419,7284.88065 300.47875,7284.34665 300.47875,7283.68956 C300.47875,7283.03248 299.943419,7282.49847 299.283709,7282.49847 C298.623998,7282.49847 298.089663,7283.03248 298.089663,7283.68956 M288.862673,7288.98792 C288.862673,7291.80286 291.150266,7294.08479 293.972194,7294.08479 C296.794123,7294.08479 299.081716,7291.80286 299.081716,7288.98792 C299.081716,7286.17298 296.794123,7283.89205 293.972194,7283.89205 C291.150266,7283.89205 288.862673,7286.17298 288.862673,7288.98792 M290.655732,7288.98792 C290.655732,7287.16159 292.140329,7285.67967 293.972194,7285.67967 C295.80406,7285.67967 297.288657,7287.16159 297.288657,7288.98792 C297.288657,7290.81525 295.80406,7292.29716 293.972194,7292.29716 C292.140329,7292.29716 290.655732,7290.81525 290.655732,7288.98792"
+                      id="instagram-[#167]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <svg
+            class="h741"
+            viewBox="0 0 20 20"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            fill="#000000"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <title>google [#178]</title>
+              <desc>Created with Sketch.</desc>
+              <defs></defs>
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-300.000000, -7399.000000)"
+                  fill="#ed0c0c"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M263.821537,7247.00386 L254.211298,7247.00386 C254.211298,7248.0033 254.211298,7250.00218 254.205172,7251.00161 L259.774046,7251.00161 C259.560644,7252.00105 258.804036,7253.40026 257.734984,7254.10487 C257.733963,7254.10387 257.732942,7254.11086 257.7309,7254.10986 C256.309581,7255.04834 254.43389,7255.26122 253.041161,7254.98137 C250.85813,7254.54762 249.130492,7252.96451 248.429023,7250.95364 C248.433107,7250.95064 248.43617,7250.92266 248.439233,7250.92066 C248.000176,7249.67336 248.000176,7248.0033 248.439233,7247.00386 L248.438212,7247.00386 C249.003881,7245.1669 250.783592,7243.49084 252.969687,7243.0321 C254.727956,7242.65931 256.71188,7243.06308 258.170978,7244.42831 C258.36498,7244.23842 260.856372,7241.80579 261.043226,7241.6079 C256.0584,7237.09344 248.076756,7238.68155 245.090149,7244.51127 L245.089128,7244.51127 C245.089128,7244.51127 245.090149,7244.51127 245.084023,7244.52226 L245.084023,7244.52226 C243.606545,7247.38565 243.667809,7250.75975 245.094233,7253.48622 C245.090149,7253.48921 245.087086,7253.49121 245.084023,7253.49421 C246.376687,7256.0028 248.729215,7257.92672 251.563684,7258.6593 C254.574796,7259.44886 258.406843,7258.90916 260.973794,7256.58747 C260.974815,7256.58847 260.975836,7256.58947 260.976857,7256.59047 C263.15172,7254.63157 264.505648,7251.29445 263.821537,7247.00386"
+                      id="google-[#178]"
+                    ></path>
+                  </g>
+                </g>
+              </g>
+            </g>
+          </svg>
+          <pre class="h742">
+  Copyright 2018
+  Your Company name
+  
+  Design: TemplateMo
+                        </pre
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
